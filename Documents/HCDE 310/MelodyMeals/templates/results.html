@@ -1,0 +1,32 @@
+<!-- results.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h2>Your Playlist Analysis</h2>
+    <div class="playlist-details mt-4">
+        <h4>Playlist Mood:</h4>
+        <ul class="list-unstyled">
+            <li>Energy Level: {{ playlist_mood.energy }}</li>
+            <li>Tempo Range: {{ playlist_mood.tempo }}</li>
+            <li>General Mood: {{ playlist_mood.mood }}</li>
+        </ul>
+    </div>
+
+    <div class="recipe-suggestions mt-5">
+        <h4>Recipe Suggestions:</h4>
+        <ul class="list-unstyled">
+            {% for recipe in recipe_suggestions %}
+                <li>
+                    <a href="{{ recipe.url }}" target="_blank">{{ recipe.name }}</a>
+                    <p>{{ recipe.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-secondary">Go Back</a>
+    </div>
+</div>
+{% endblock %}
