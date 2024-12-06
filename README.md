@@ -44,3 +44,4 @@ My proposed website will be very simple, taking just one playlist as input from 
 • Recipe pairing with individual songs: instead of matching recipes to an entire playlist’s vibes, I could try to provide recipe suggestions tailored to each specific song. This would greatly increase the number of recipes given to the user, ensuring at least one entices the user.
 
 • User accounts and favorite recipes: add accounts that allow the user to save their favorite playlists and associated recipes. This would improve user engagement by allowing them to easily revisit their favorite music-meal pairings
+# MoodMeals
